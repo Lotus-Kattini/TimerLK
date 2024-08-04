@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Countdown Timer</h1>
+        <div class="input-container">
+            <label for="time">Enter Time (minutes):</label>
+            <input type="number" id="time" min="1" placeholder="Enter minutes">
+        </div>
+        <button id="start-timer">Start Timer</button>
+        <div class="input-container">
+            <label for="break-time">Enter Break Time (minutes):</label>
+            <input type="number" id="break-time" min="1" placeholder="Enter minutes">
+        </div>
+        <button id="start-break">Start Break</button>
+    </div>
+    <div id="fullscreen-timer" class="fullscreen">
+        <div class="timer-content">
+            <div id="timer-display" class="digital-clock">
+                <span class="digits" id="minutes">00</span>
+                <span class="separator">:</span>
+                <span class="digits" id="seconds">00</span>
+            </div>
+            <div class="button-group">
+                <button id="pause-timer">Pause</button>
+                <button id="resume-timer">Resume</button>
+                <button id="stop-timer">Stop</button>
+            </div>
+        </div>
+        <audio id="alarm-sound" src="alarm.mp3"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
